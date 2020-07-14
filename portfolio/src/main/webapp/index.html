@@ -1,18 +1,147 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
+<!doctype html>
+
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<title>Riya Baviskar</title>
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav class="site-navigation">
+		<div class="site-navigation-inner site-container">
+			<div class="main-navigation">
+				<ul class="main-navigation__ul">
+					<li><a href="#intro">Homepage</a></li>
+					<li><a href="#about-me">About me</a></li>
+					<li><a href="#projects">My Research and Internship Experience</a></li>
+					<li><a href="#contact">Get in touch!</a></li>
+				</ul>
+			</div>
+			<div id="myBtn" class="burger-container" onclick="myFunction1(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<script>
+				function myFunction1(x) {
+					x.classList.toggle("change");
+				}
+				
+			</script>
+		</div>
+	</nav>
+	<!-- Navigation end -->
+
+	<!-- Intro -->
+	<section class="intro" id="intro">
+		<div class="intro__inner site-container">
+			<div class="intro__image">
+				<img src="./images/pic.png" alt="author image">
+			</div>
+			<div class="intro__text">
+				<div class="intro__text-up">
+					<span class="brand-span">Welcome!</span><br>
+					<span class="brand-span">You have landed at webpage of </span> <br><br>
+					<h2 class="intro__h2">Riya Baviskar</h2>
+					<span class="brand-span">Programmer, NLP enthusiast, Extrovert</span> <br><br>
+				</div>
+				<p>Life is better when you’re smiling :)</p>
+			</div>
+		</div>
+	</section>
+	<!-- Intro end -->
+
+	<!-- About me -->
+	<section class="about-me" id="about-me">
+		<div class="about-me-inner site-container">
+			<div class="portfolio__img">
+				<img src="./images/about-me.jpeg" class="about-me__profile" alt="about me profile picture">
+			</div>
+			<div class="about-me__text">
+				<h2 class="universal-h2 universal-h2-bckg">About me</h2>
+				<p><span>I</span> 'm a final year Computer Science undergrad at IIT Bombay. Enthusiastic about learning new things and solving real world problems. </p>
+				<p>I'm interested in exploring Algorithms, Natural Language Processsing and Deep Learning fields further.</p>
+				<p>My other interests include watching and playing cricket, cooking and doing random stuff :p </p> 
+
+			</div>
+		</div>
+		<div class="about-me-bckg"></div>
+	</section>
+	<!-- About me end -->
+
+	<!-- Projects -->
+	<section class="project" id="projects">
+		<div class="site-container">
+			<h2 class="universal-h2 universal-h2-bckg">My Research and Internship Experience</h2>
+			<div class="project-slider project-inner">
+				<div class="single-project">					
+					<div class="single-project__text">
+						<h4>Intelligent Ranking feature for Action Cards</h4>
+						<span>Microsoft India (R&D)</span>
+						<p>A ranking system for action cards generated on Dynamics 365 Sales Insights Assistant.</p>
+					</div>
+				</div>
+				<div class="single-project">					
+					<div class="single-project__text">
+						<h4>Knowledge Graph for Product Manuals</h4>
+						<span>Prof. Pushpak Bhattacharyya, IIT Bombay and LG Soft India</span>
+						<p>A system which creates knowledge graph from product manuals and answer user queries related to various product issues and features.</p>
+					</div>
+				</div>
+				<div class="single-project">					
+					<div class="single-project__text">
+						<h4>Personality extraction from dialogues</h4>
+						<span>Samsung R&D Institute India, Bangalore</span>
+						<p>An end-to-end model which extracts the likes and dislikes of a person from utterances of dialogue.</p>
+					</div>
+				</div>
+				<div class="single-project">					
+					<div class="single-project__text">
+						<h4>GPU Enabled Serverless Software Architecture</h4>
+						<span>Prof. Purushottam Kulkarni, IIT Bombay</span>
+						<p>End-to-end implementation of FaaS which supports GPU function deployment and execution.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Projects end -->
+
+	<!-- Contact -->
+	<section class="contact" id="contact">
+		<div class="site-container">
+			<h2 class="universal-h2 contact-h2">Let's Connect</h5>
+			
+			<div class="form">
+				<form class="contact-form">
+					<div class="contact-form__input">
+					<input type="text" name="name" placeholder="Name">
+					<input type="email" name="email" placeholder="Email">
+					</div>
+					<textarea></textarea>
+					<input type="submit" name="submit" value="Connect!" class="submit-button">
+				</form>
+			</div>			
+				
+			<div class="social-icons">
+				<a href="mailto:riyakbaviskar@gmail.com" target="_blank"><img src="./images/social-email.png"></a>
+				<a href="https://www.linkedin.com/in/riya-baviskar/" target="_blank"><img src="./images/social-linkedin.png"></a>
+				<a href="https://www.facebook.com/riya.baviskar.35" target="_blank"><img src="./images/social-fb.png"></a>
+			</div>
+		</div>
+	</section>
+	<!-- Contact end -->
+
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- Scripts end -->
+
+</body>
 </html>
